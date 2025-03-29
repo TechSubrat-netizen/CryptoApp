@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import Home from './Components/Home'
 import Coins from './Components/Coins'
 import Exchange from './Components/Exchange'
+import CoinDetails from './Components/CoinDetails'
 
 function App() {
  
@@ -11,10 +12,12 @@ function App() {
     <>
     <BrowserRouter>
     <Header/>
+   
     <Routes>
       <Route  path='/' element={<Home/>} />
       <Route  path='/coins' element={<Coins/>} />
-      <Route path='/coinExange' element={<Exchange/>}/>
+      <Route path='/coinExchange' element={<Exchange/>}/>
+      <Route path='/coindetails' element={<CoinDetails/>}/>
 
     </Routes>
     </BrowserRouter>
